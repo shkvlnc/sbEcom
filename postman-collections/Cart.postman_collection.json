@@ -1,0 +1,149 @@
+{
+  "info": {
+    "_postman_id": "ab31a87f-ffed-4585-a23d-a323a9427a87",
+    "name": "Cart",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36307325"
+  },
+  "item": [
+    {
+      "name": "Add Products to Cart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/carts/products/1/quantity/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "carts",
+            "products",
+            "1",
+            "quantity",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Carts",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"categoryName\": \"FOR DELETION\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/carts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "carts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get User Cart",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"categoryName\": \"FOR DELETION\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/carts/users/cart",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "carts",
+            "users",
+            "cart"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update quantity of product in Cart",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"categoryName\": \"FOR DELETION\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cart/products/1/quantity/delete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cart",
+            "products",
+            "1",
+            "quantity",
+            "delete"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete product from Cart",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"categoryName\": \"FOR DELETION\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/carts/1/product/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "carts",
+            "1",
+            "product",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
