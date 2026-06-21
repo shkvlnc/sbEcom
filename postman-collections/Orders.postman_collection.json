@@ -1,0 +1,45 @@
+{
+  "info": {
+    "_postman_id": "27fd2cd7-9a38-442d-bf14-998d120f76c0",
+    "name": "Orders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36307325"
+  },
+  "item": [
+    {
+      "name": "Place Order",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"addressId\": 1,\r\n    \"pgName\": \"Stripe\",\r\n    \"pgPaymentId\": \"pi_1FHEhK2eZvKYlo2CcK4UJNdw\",\r\n    \"pgStatus\": \"succeeded\",\r\n    \"pgResponseMessage\": \"Payment Successful\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/order/users/payments/CARD",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "order",
+            "users",
+            "payments",
+            "CARD"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
